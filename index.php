@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PHP Badwords</title>
+  <link rel="stylesheet" href="./styles/general.css">
 </head>
 <body>
   <!-- Descrizione:
@@ -14,7 +15,7 @@
   Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
   - stampare a schermo il paragrafo e la sua lunghezza
   - stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare -->
-  <form action="./censured.php" method="POST">
+  <form action="./censured.php" method="POST" class="d-flex justify-content-center align-items-center flex-column gap-1">
     <textarea name="paragraphText" id="paragraphText" cols="30" rows="10" placeholder="Inserisci qui il testo del paragrafo"></textarea>
     <label for="wordToCensure">Inserisci la parola da censurare:</label>
     <input type="text" name="wordToCensure" id="wordToCensure">

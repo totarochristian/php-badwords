@@ -17,6 +17,9 @@
 .flex-column{
   flex-direction: column;
 }
+.gap-1{
+  gap: 2rem;
+}
 .p-t-1{
   padding-top: 4rem;
 }
