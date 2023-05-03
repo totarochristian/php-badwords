@@ -15,6 +15,11 @@
     $paragraphText = isset($_POST["paragraphText"]) && !empty($_POST["paragraphText"]) && !is_null($_POST["paragraphText"]) ? $_POST["paragraphText"] : $defaultParagraphText;
     $wordToCensure = isset($_POST["wordToCensure"]) && !empty($_POST["wordToCensure"]) && !is_null($_POST["wordToCensure"]) ? $_POST["wordToCensure"] : $defaultWordToCensure;
   ?>
-  
+  <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+    <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+      <h2>Paragrafo originale (<?php strlen($paragraphText); ?> caratteri)</h2>
+      <p><?php echo $paragraphText; ?></p>
+    </div>
+  </div>
 </body>
 </html>
