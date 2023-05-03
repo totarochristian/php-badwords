@@ -18,6 +18,7 @@
     $censuredParagraphText = str_replace($wordToCensure,$defaultCensureWord,$paragraphText);
   ?>
   <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+    <h1>PHP Badwords</h1>
     <div class="d-flex justify-content-center align-items-center flex-column gap-1">
       <h2>Paragrafo originale (<?php echo strlen($paragraphText); ?> caratteri)</h2>
       <p><?php echo $paragraphText; ?></p>
