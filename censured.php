@@ -14,11 +14,17 @@
     
     $paragraphText = isset($_POST["paragraphText"]) && !empty($_POST["paragraphText"]) && !is_null($_POST["paragraphText"]) ? $_POST["paragraphText"] : $defaultParagraphText;
     $wordToCensure = isset($_POST["wordToCensure"]) && !empty($_POST["wordToCensure"]) && !is_null($_POST["wordToCensure"]) ? $_POST["wordToCensure"] : $defaultWordToCensure;
+
+    $censuredParagraphText = str_replace($wordToCensure,$defaultCensureWord,$paragraphText);
   ?>
   <div class="d-flex justify-content-center align-items-center flex-column gap-1">
     <div class="d-flex justify-content-center align-items-center flex-column gap-1">
       <h2>Paragrafo originale (<?php echo strlen($paragraphText); ?> caratteri)</h2>
       <p><?php echo $paragraphText; ?></p>
+    </div>
+    <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+      <h2>Paragrafo censurato (<?php echo strlen($censuredParagraphText); ?> caratteri)</h2>
+      <p><?php echo $censuredParagraphText; ?></p>
     </div>
   </div>
 </body>
