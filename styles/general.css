@@ -4,3 +4,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Flexbox */
+.d-flex{
+  display: flex;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.align-items-center{
+  align-items: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+.p-t-1{
+  padding-top: 4rem;
+}
