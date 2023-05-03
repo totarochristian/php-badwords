@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PHP Badwords</title>
+  <link rel="stylesheet" href="./styles/general.css">
 </head>
 <body>
   <?php
@@ -17,7 +18,7 @@
 
     $censuredParagraphText = str_replace($wordToCensure,$defaultCensureWord,$paragraphText);
   ?>
-  <div class="d-flex justify-content-center align-items-center flex-column gap-1">
+  <div class="mainContainer p-t-1 d-flex justify-content-center align-items-center flex-column gap-1">
     <h1>PHP Badwords</h1>
     <div class="d-flex justify-content-center align-items-center flex-column gap-1">
       <h2>Paragrafo originale (<?php echo strlen($paragraphText); ?> caratteri)</h2>

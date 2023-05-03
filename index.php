@@ -15,12 +15,14 @@
   Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
   - stampare a schermo il paragrafo e la sua lunghezza
   - stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare -->
-  <form action="./censured.php" method="POST" class="d-flex justify-content-center align-items-center flex-column gap-1">
-    <h1>PHP Badwords</h1>
-    <textarea name="paragraphText" id="paragraphText" cols="30" rows="10" placeholder="Inserisci qui il testo del paragrafo"></textarea>
-    <label for="wordToCensure">Inserisci la parola da censurare:</label>
-    <input type="text" name="wordToCensure" id="wordToCensure">
-    <input type="submit" value="Invia">
-  </form>
+  <div class="mainContainer p-t-1">
+    <form action="./censured.php" method="POST" class="d-flex justify-content-center align-items-center flex-column gap-1">
+      <h1>PHP Badwords</h1>
+      <textarea name="paragraphText" id="paragraphText" cols="30" rows="10" placeholder="Inserisci qui il testo del paragrafo"></textarea>
+      <label for="wordToCensure">Inserisci la parola da censurare:</label>
+      <input type="text" name="wordToCensure" id="wordToCensure">
+      <input type="submit" value="Invia">
+    </form>
+  </div>
 </body>
 </html>

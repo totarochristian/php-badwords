@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* General */
+.mainContainer{
+  width: 100%;
+}
 /* Flexbox */
 .d-flex{
   display: flex;
